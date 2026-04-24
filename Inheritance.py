@@ -73,9 +73,9 @@ class VegPreparation:
         print("All vegetables are cut")
 
 class TypeOfCooking(VegPreparation):
-    """Simulate a cooking workflow for a vegetable dish."""
+    """Simulate a cooking workflow for a vegetable dish.
 
-    """This class will perform the cooking steps of Cabbage dish using user input"""
+    This class will perform the cooking steps of Cabbage dish using user input"""
     @staticmethod
     def stove_checking() -> None:
         """
