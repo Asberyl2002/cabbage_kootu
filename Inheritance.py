@@ -1,8 +1,8 @@
 class VegPreparation:
-    """handle basic vegetable preparation steps such as washing and cutting."""
+    """handle basic vegetable preparation steps such as washing and cutting.
 
-    """This class interacts with the user to simulate preparation of vegetables
-    using input-based steps."""
+    This class interacts with the user to simulate preparation of vegetables
+    using input-based steps. github"""
 
     def __init__(self, vegetables: list[str]) -> None:
         """
