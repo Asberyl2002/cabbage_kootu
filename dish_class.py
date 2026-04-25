@@ -8,7 +8,7 @@ class Cooking:
                 check = input(f'Is {i} it clean enter yes/no:')
                 if check == 'yes':
                     print(f'{i} is clean')
-                    is_clean = False
+                    is_clean = Fals
                 else:
                     print(f'Wash {i} again!')
         print("All Vegetables are clean")
