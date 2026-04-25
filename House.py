@@ -1,7 +1,7 @@
 class House:
     def __init__(self,color,rooms):
        self.color = color
-       self.rooms = rooms
+       self.rooms = room
     def modify(self):
         print("Selected Color", self.color)
         print("Number of rooms in the house", self.rooms)
