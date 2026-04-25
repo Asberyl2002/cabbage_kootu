@@ -22,6 +22,6 @@ class Cooking:
                 else:
                     print(f'Please wait until you finish cutting {j}.')
                     print(f"Cut{j}") 
-Dish = Cooking(vegetables=["Carrot", "Green chilli", "curry leaves", "onion"])
+Dish = Cooking(vegetables=["Cabbage", "Green chilli", "curry leaves", "onion"])
 Dish.wash()
 
