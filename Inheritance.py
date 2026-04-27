@@ -22,53 +22,34 @@ class VegPreparation:
         return f"{self.__class__.__name__}(vegetables={self.vegetables})"
 
     def wash(self) -> list[str]:
-        """
-                Simulate washing vegetables interactively.
-
-                For each vegetable, asks the user if it is clean.
-                Continues until all vegetables are confirmed clean.
-        """
         for veg in self.vegetables:
             while True:
+                check = input(f'Is {veg} clean? yes/no: ')
 
-                    check = input(f'Is {veg} clean? yes/no: ')
-
-                    if check == 'yes':
-                        print(f'{veg} is clean')
-                        break
-                    elif check == 'no':
-                        print(f'Wash {veg} again!')
-                    else:
-                        print("Invalid input!")
-
-
-                    return self.vegetables
+                if check == 'yes':
+                    print(f'{veg} is clean')
+                    break
+                elif check == 'no':
+                    print(f'Wash {veg} again!')
+                else:
+                    print("Invalid input!")
 
         print("All vegetables are clean")
         return self.vegetables
 
-    def cut(self) -> None:
-        """
-                Simulate cutting vegetables interactively.
 
-                For each vegetable, asks the user if it is cut properly.
-                Continues until all vegetables are confirmed cut.
-        """
+    def cut(self) -> None:
         for veg in self.vegetables:
             while True:
+                cut = input(f'Is {veg} cut? yes/no: ')
 
-                    cut = input(f'Is {veg} cut? yes/no: ').strip().lower()
-
-                    if cut == 'yes':
-                        print(f'{veg} is cut')
-                        break
-                    elif cut == 'no':
-                        print(f'Please finish cutting {veg}')
-                    else:
-                        print("Invalid input!")
-
-
-                    return
+                if cut == 'yes':
+                    print(f'{veg} is cut')
+                    break
+                elif cut == 'no':
+                    print(f'Please finish cutting {veg}')
+                else:
+                    print("Invalid input!")
 
         print("All vegetables are cut")
 
@@ -267,16 +248,3 @@ if __name__ == "__main__":
     cabbage_kootu.mixing_ingredients(mixture)
     cabbage_kootu.grinder_start()
     cabbage_kootu.add_mixture_to_cabbage()
-    carrot_kootu = TypeOfCooking(vegetables=["Carrot", "Green chilli", "Curry leaves", "Onion"])
-    print(repr(carrot_kootu))
-    carrot_kootu.wash()
-    carrot_kootu.cut()
-    carrot_kootu.stove_checking()
-    carrot_kootu.ingredient_checking()
-    carrot_kootu.check_oil_is_burst()
-    carrot_kootu.add_onion_to_pan()
-    carrot_kootu.check_cabbage_cook()
-    mixture = ["Cumin", "Garlic", "Green chilli", "Turmeric", "Grated Coconut"]
-    carrot_kootu.mixing_ingredients(mixture)
-    carrot_kootu.grinder_start()
-    carrot_kootu.add_mixture_to_cabbage()
